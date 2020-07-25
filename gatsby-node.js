@@ -22,7 +22,7 @@ const makeRequest = (graphql, request) => new Promise((resolve, reject) => {
 
 // Implement the Gatsby API “createPages”. This is called once the
 // data layer is bootstrapped to let plugins create pages from data.
-exports.onCreatePage = async ({ page, actions }) => {
+/* exports.onCreatePages = async ({ page, actions }) => {
     const { createPage } = actions
     // page.matchPath is a special key that's used for matching pages
     // only on the client.
@@ -31,7 +31,7 @@ exports.onCreatePage = async ({ page, actions }) => {
       // Update the page.
       createPage(page)
     }
-  };
+  }; */
 
   exports.createPages = ({ actions, graphql }) => {
     const { createPage } = actions;
